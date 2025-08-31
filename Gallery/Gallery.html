@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Banner</Title>
+    </head>
+    <link rel="stylesheet" href="galleystyle.css">
+    <body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <a href="../index.html"><h2>Cebu Wonders</h2></a>
+            <div class="navlinks">
+                <a href="../Home/home.html">Home</a>
+                <a href="../Tourist Spots/touristspots.html">Tourist Spots</a>
+                <a href="../Directions/direction.html">Directions</a>
+                <a href="../Gallery/Gallery.html">Gallery</a>
+                <a href="../About/About.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+
+<Main>
+    <div class="wrapper">
+        <div class="gallery">
+            <div class="title">Magellan's Cross</div>
+            <div class="img-section">
+
+                <img src="pictures/Magellan/Inside Magellan.jpg" alt="">
+                <img src="pictures/Magellan/inside-magellancross.jpg" alt="">
+                <img src="pictures/Magellan/Magellan's_Cross_2024-07-05.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="title">Basilica del Santo Niño</div>
+            <div class="img-section">
+
+                <img src="pictures/Basilica/Basilica_del_Santo_Niño_2024-07-05.jpg" alt="">
+                <img src="pictures/Basilica/Basilica_del_Santo_Niño_sanctuary_2024-07-05.jpg" alt="">
+                <img src="pictures/Basilica/Basilica_Minore_del_Santo_Niño_de_Cebu_inside_altar_(Osmeña_Boulevard,_Cebu_City;_01-14-2023).jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="title">Temple of Leah</div>
+            <div class="img-section">
+
+                <img src="pictures/Temple Leah/hall.png" alt="">
+                <img src="pictures/Temple Leah/night.png" alt="">
+                <img src="pictures/Temple Leah/Statue.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="title">Kawasan Falls</div>
+            <div class="img-section">
+
+                <img src="pictures/Kawasan/Badian_Kawasan_Falls_Cebu.jpg" alt="">
+                <img src="pictures/Kawasan/Kawasan_Canyoneering_.jpg" alt="">
+                <img src="pictures/Kawasan/Kawasan_Falls_Cebu_Island.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="title">Oslob Whale Shark Watching</div>
+            <div class="img-section">
+
+                <img src="pictures/Oswlod/oslob whale shark.jpg" alt="">
+                <img src="pictures/Oswlod/Whal Shark1.png" alt="">
+                <img src="pictures/Oswlod/Whale Shark watching.jpg" alt="">
+
+            </div>
+        </div>
+
+    </div>
+</Main>
+
+<div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<footer>
+    <Div class="footer">
+        <div class="row">
+            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=andreiisler568@gmail.com&tf=1"><img src="../email.png" alt=""></a>
+            <a href="https://www.facebook.com/andrei.isler#"><img src="../facebok.png" alt=""></a>
+        </div>
+
+        <div class="row">
+            Copyright © 2025 - All rights reserved || This website is part of a school project.
+        </div>
+    </Div>
+</footer>
+    </body>
+
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const images = document.querySelectorAll(".img-section img");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        });
+    });
+
+
+    lightbox.addEventListener("click", (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    });
+</script>
+
+</html>

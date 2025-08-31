@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: block;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-color: Grey;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 30px;
+}
+
+.navdiv a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navdiv a img{
+    position:absolute;
+    width: 60px;
+    height: auto;
+    align-items: center;
+    top: 5px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------------------------------- */
+/* Main Body */
+
+main{
+    min-height: 100vh;
+    margin-top: 0px;
+    background: url(Backg3.jpg), no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    padding-top: 40px;
+}
+
+.gallery{
+    margin-left: 60px;
+}
+
+.gallery .title{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    /* -webkit-text-stroke: 1px rgb(255, 255, 255); */
+}
+
+.img-section{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding-bottom: 40px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.img-section img {
+    width: 32%;
+    max-height: 400px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.img-section img:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------------------- */
+/* Footer */
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    padding: 10px 0px;
+    border-top-style: solid;
+    border-color: rgb(189, 189, 189);
+}
+
+.footer .row{
+    width:100%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color: black;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row img{
+    height: 25px;
+    width: auto;
+    gap: 10px;
+}

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: block;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-color: Grey;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 30px;
+}
+
+.navdiv a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navdiv a img{
+    position:absolute;
+    width: 60px;
+    height: auto;
+    align-items: center;
+    top: 5px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------------------------------- */
+/* Main Body */
+
+Main{
+    width: 100%;
+    background: url(Backg1.jpg), no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.head{
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+
+.content{
+    margin: 0 40px;
+    padding-bottom: 20px;
+    display: grid;
+}
+
+.section{
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 20px;
+    border: 1px, solid, lightslategray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.section .image img{
+    width: 400px;
+    height: 100%;
+}
+
+.section .text h2{
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.section .text p{
+    font-size: 20px;
+}
+
+#right{
+    margin-right: 30px;   
+}
+
+#left{
+    text-align: right;
+}
+
+#left p{
+    margin-left: 30px;   
+}
+
+
+
+/* ------------------------------------------------------- */
+/* Footer */
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    padding: 10px 0px;
+    border-top-style: solid;
+    border-color: rgb(189, 189, 189);
+}
+
+.footer .row{
+    width:100%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color: black;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row img{
+    height: 25px;
+    width: auto;
+    gap: 10px;
+}
